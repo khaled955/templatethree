@@ -2,8 +2,15 @@
 bod{
 
     font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
 
 }
+
+body > *{
+    border: 2px solid red;
+}
+
+
 
  ul{
 
@@ -1524,21 +1531,10 @@ margin-top: 100px;
 
 
 
-@media screen and (max-width:767px){
-    .events .container .subscribe form{
-        max-width: 100%;
-        flex-direction: column;
-        border-radius: 0px;
-        padding: 20px;
-    }
 
-
-
-
-}
 
 .events .container .subscribe form{
-width: 600px;
+width: 100%;
 background-color: #f6f5f5;
 margin: 20px auto;
 display: flex;
@@ -1562,22 +1558,6 @@ opacity: 0;
 }
 
 
-@media (max-width:767px){
-    .events .container .subscribe form input[type="email"]{
-        border-radius: 0;
-
-    }
-
-    .events .container form input::placeholder{
-        text-align: center;
-    }
-
-    .events .container .subscribe form input[type="submit"]{
-
-
-    }
-
-}
 
 
 .events .container .subscribe form input[type="email"]{
@@ -1615,6 +1595,47 @@ background-color: var(--colorAlternative);
 
 
 }
+
+
+
+
+@media (max-width:767px){
+    .events .container .subscribe form input[type="email"]{
+        border-radius: 0;
+
+    }
+
+    .events .container form input::placeholder{
+        text-align: center;
+    }
+
+   
+
+}
+
+
+
+
+
+@media screen and (max-width:767px){
+    .events .container .subscribe form{
+        max-width: 100%;
+        flex-direction: column;
+        border-radius: 0px;
+        padding: 20px;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
 
 
 
